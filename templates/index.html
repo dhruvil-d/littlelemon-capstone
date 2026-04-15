@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon Restaurant</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f3e8 0%, #e8e4d4 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            padding: 60px 40px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #495e57;
+            margin-bottom: 16px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #f4ce14;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+        .endpoints {
+            text-align: left;
+            background: #f9f9f6;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e8e4d4;
+        }
+        .endpoints h3 {
+            color: #495e57;
+            margin-bottom: 12px;
+        }
+        .endpoints ul {
+            list-style: none;
+            padding: 0;
+        }
+        .endpoints li {
+            padding: 6px 0;
+            font-family: monospace;
+            font-size: 0.95rem;
+            color: #333;
+        }
+        .endpoints li a {
+            color: #495e57;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .endpoints li a:hover {
+            color: #f4ce14;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Little Lemon</h1>
+        <p class="subtitle">Restaurant &amp; API</p>
+        <p>Welcome to the Little Lemon Restaurant API. Use the endpoints below to interact with our menu and booking system.</p>
+        <div class="endpoints">
+            <h3>API Endpoints</h3>
+            <ul>
+                <li><a href="/api/menu/">/api/menu/</a> &mdash; Menu items (CRUD)</li>
+                <li><a href="/api/bookings/">/api/bookings/</a> &mdash; Bookings (CRUD)</li>
+                <li><a href="/api-token-auth/">/api-token-auth/</a> &mdash; Obtain auth token</li>
+                <li><a href="/auth/users/">/auth/users/</a> &mdash; User registration</li>
+                <li><a href="/auth/token/login/">/auth/token/login/</a> &mdash; Djoser login</li>
+                <li><a href="/auth/token/logout/">/auth/token/logout/</a> &mdash; Djoser logout</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
